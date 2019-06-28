@@ -1,0 +1,196 @@
+<div class="container">
+  <div class="row" id="storeDiv">
+    <form class="col s12">
+      <div class="col s12 red">
+        <h4>Store information</h4>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="storeName" type="text" class="validate">
+          <label for="storeName">Name</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">phone</i>
+          <input id="storePhone" type="tel" class="validate">
+          <label for="storePhone">Telephone</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">location_city</i>
+          <input id="storeStreet" type="text" class="validate">
+          <label for="storeStreet">Street</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">location_on</i>
+          <input id="storeNum" type="tel" class="validate">
+          <label for="storeNum">Number</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">location_on</i>
+          <input id="storeZip" type="text" class="validate">
+          <label for="storeZip">Zip Code</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">location_on</i>
+          <input id="storeState" type="tel" class="validate">
+          <label for="storeState">State</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <select id="storeOpen">
+            <option value="" disabled selected>Open hours</option>
+            <option value="8">08:00</option>
+            <option value="9">09:00</option>
+            <option value="10">10:00</option>
+            <option value="11">11:00</option>
+            <option value="12">12:00</option>
+            <option value="13">13:00</option>
+          </select>
+          <label>Store hours </label>
+        </div>
+        <div class="input-field col s6">
+          <select id="storeClose">
+            <option value="" disabled selected>Close hours</option>
+            <option value="14">14:00</option>
+            <option value="15">15:00</option>
+            <option value="16">16:00</option>
+            <option value="17">17:00</option>
+            <option value="18">18:00</option>
+            <option value="19">19:00</option>
+            <option value="20">20:00</option>
+          </select>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="storeEmail" type="email" class="validate">
+          <label for="storeEmail">Email</label>
+          <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+        </div>
+        <div class="input-field col s6">
+          <input id="storePwd" type="password" class="validate">
+          <label for="storePwd">Password</label>
+        </div>
+      </div>
+      <div class="file-field input-field col s6">
+        <div class="btn">
+          <span>Logo</span>
+          <input type="file" id="logoBtn">
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate" type="text" placeholder="Upload logo">
+        </div>
+      </div>
+      <div class="file-field input-field col s6">
+        <div class="btn">
+          <span>Banner</span>
+          <input type="file" id="bannerBtn">
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate" type="text" placeholder="Upload banner">
+        </div>
+      </div>
+
+      <div class="col s12 red">
+        <h4>Contact information</h4>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">contacts</i>
+          <input id="storeContact" type="text" class="validate">
+          <label for="storeContact">Name</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">work</i>
+          <input id="contactPosition" type="tel" class="validate">
+          <label for="contactPosition">Position</label>
+        </div>
+      </div>
+      <a class="waves-effect waves-light btn" id="submitBtnStore"><i class="material-icons right">save</i>Submit</a>
+    </form>
+  </div>
+<!--Service DIV-->
+  <div class="row s12" id="serviceDiv" style="display: none">
+    <form class="col s12">
+      <div class="col s12 red">
+        <h4>Service information</h4>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="serviceName" type="text" class="validate">
+          <label for="serviceName">Service Title</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">phone</i>
+          <input id="servicePrice" type="tel" class="validate">
+          <label for="servicePrice">Price</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <select id="serviceTime">
+            <option value="" disabled selected>Select time</option>
+            <option value="30">00:30 min</option>
+            <option value="60">01:00 hrs</option>
+            <option value="120">02:00 hrs</option>
+          </select>
+          <label>Service duration</label>
+        </div>
+        <div class="input-field col s6">
+          <select id="serviceGender">
+            <option value="" disabled selected>Oriented to</option>
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+            <option value="Both">Both</option>
+          </select>
+          <label>Gender</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="serviceDesc" type="text" class="validate">
+          <label for="serviceDesc">Service Description</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="file-field input-field col s6">
+          <div class="btn">
+            <span>Image</span>
+            <input type="file" id="serviceImgBtn">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text" placeholder="Upload Image">
+          </div>
+        </div>
+      </div>
+      <a class="waves-effect waves-light btn" id="submitBtnService"><i class="material-icons right">save</i>Add</a>
+    </form>
+    <h4>Added Services:</h4>
+        <ul id="example-list" class="collection with-header">
+          {{#each services}}
+          <li data-id="{{this.id}}" class="collection-item">
+            <div>
+              {{this.text}}
+              <a href="example/{{this.id}}" class="secondary-content"><i class="material-icons">edit</i></a>
+              <a href="example/{{this.id}}" class="secondary-content"><i class="material-icons">delete</i></a>
+            </div>
+            <!--<a href="example/{{this.id}}">{{this.text}}</a>
+            <button class="btn btn-danger float-right delete">ｘ</button>-->
+          </li>
+          {{/each}}
+        </ul>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Font Mambo Logo -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <!-- mambo CSS-->
+  <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
+  <!-- stars css-->
+  <link rel="stylesheet" type="text/css" href="/styles/star-rating-svg.css">
+  <title>Mambo</title>
+  <title>Document</title>
+</head>
+
+<body>
+  {{{body}}}
+  <!-- jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!--Stars js-->
+  <script src="/js/jquery.star-rating-svg.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('select').formSelect();
+
+      $(".my-rating").starRating({
+      initialRating: 3.5,
+      strokeColor: '#f8f9fa',
+      strokeWidth: 10,
+      starSize: 25
+    });
+
+    });
+
+    
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
+  <script src="/js/fbcon.js"></script>
+  <script src="/js/storeSetup.js"></script>
+</body>
+
+</html>
