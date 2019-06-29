@@ -175,7 +175,6 @@ var refreshServices = function () {
 
     $exampleList.empty();
     $exampleList.append($services);
-    alert(storeID);
   });
 };
 //handleDeleteBtnClick is called when an example's delete button is clicked

@@ -33,4 +33,11 @@ module.exports = function(app) {
       res.json(dbServices);
     });
   });
+
+  // Create a new service
+  app.post("/api/comments", function(req, res) {
+    db.Comments.create(req.body).then(function(dbComment) {
+      res.json(dbComment);
+    });
+  });
 };

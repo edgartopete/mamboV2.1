@@ -34,13 +34,18 @@
     $(document).ready(function () {
       $('select').formSelect();
 
-      $(".my-rating").starRating({
-      initialRating: 3.5,
-      strokeColor: '#f8f9fa',
-      strokeWidth: 10,
-      starSize: 25
-    });
-
+    
+      $(".my-rating-9").starRating({
+        starSize: 25,
+    initialRating: 3.5,
+    disableAfterRate: false,
+    onHover: function(currentIndex, currentRating, $el){
+      $('.live-rating').text(currentIndex);
+    },
+    onLeave: function(currentIndex, currentRating, $el){
+      $('.live-rating').text(currentRating);
+    }
+  });
     });
 
     
@@ -48,6 +53,7 @@
   <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
   <script src="/js/fbcon.js"></script>
   <script src="/js/storeSetup.js"></script>
+  <script src="/js/comments.js"></script>
 </body>
 
 </html>

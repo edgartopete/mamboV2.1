@@ -1,6 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
   var Comments = sequelize.define("Comments", {
-    serviceRat: DataTypes.INTEGER,
+    serviceRat: DataTypes.DECIMAL,
     serviceCom: DataTypes.TEXT
   });
 
