@@ -7,7 +7,7 @@ var $btnComments = $("#btnComments");
 var $service=$("#service");
 ;
 // The API object contains methods for each kind of request we'll make
-var API = {
+var API2 = {
   saveComment: function (comm) {
     return $.ajax({
       headers: {
@@ -43,7 +43,7 @@ var handleFormSubmitComment = function (event) {
 
 // refreshExamples gets new examples from the db and repopulates the list
 var refreshComments = function () {
-  API.getComments().then(function (data) {
+  API2.getComments().then(function (data) {
     var $comments = data.map(function (comment) {
       var $i = $("<i>")
         .text("edit")

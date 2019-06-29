@@ -1,20 +1,18 @@
 <div class="container">
-  <form class="col s12">
-    <div class="row" id="storeDiv">
+  <div class="row" id="storeDiv">
+    <form class="col s12">
       <div class="col s12 red">
         <h4>Store information</h4>
       </div>
       <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>
-          <input id="storeName" type="text" required />
-          <label for="storeName" data-error="Please enter the store name.">Name</label>
-        <label for="storeName">Name</label>
+          <input id="storeName" type="text" class="validate">
+          <label for="storeName">Name</label>
         </div>
         <div class="input-field col s6">
           <i class="material-icons prefix">phone</i>
-          <input id="storePhone" type="tel" required />
-        
+          <input id="storePhone" type="tel" class="validate">
           <label for="storePhone">Telephone</label>
         </div>
       </div>
@@ -22,14 +20,12 @@
       <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">location_city</i>
-          <input id="storeStreet" type="text" 
-          class="validate" required="" aria-required="true">
+          <input id="storeStreet" type="text" class="validate">
           <label for="storeStreet">Street</label>
         </div>
         <div class="input-field col s6">
           <i class="material-icons prefix">location_on</i>
-          <input id="storeNum" type="tel" 
-          class="validate" required="" aria-required="true">
+          <input id="storeNum" type="tel" class="validate">
           <label for="storeNum">Number</label>
         </div>
       </div>
@@ -37,14 +33,12 @@
       <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">location_on</i>
-          <input id="storeZip" type="text" 
-          class="validate" required="" aria-required="true">
+          <input id="storeZip" type="text" class="validate">
           <label for="storeZip">Zip Code</label>
         </div>
         <div class="input-field col s6">
           <i class="material-icons prefix">location_on</i>
-          <input id="storeState" type="tel" 
-          class="validate" required="" aria-required="true">
+          <input id="storeState" type="tel" class="validate">
           <label for="storeState">State</label>
         </div>
       </div>
@@ -79,14 +73,12 @@
 
       <div class="row">
         <div class="input-field col s6">
-          <input id="storeEmail" type="email" 
-          class="validate" required="" aria-required="true">
+          <input id="storeEmail" type="email" class="validate">
           <label for="storeEmail">Email</label>
           <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
         </div>
         <div class="input-field col s6">
-          <input id="storePwd" type="password" 
-          class="validate" required="" aria-required="true">
+          <input id="storePwd" type="password" class="validate">
           <label for="storePwd">Password</label>
         </div>
       </div>
@@ -115,26 +107,16 @@
       <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">contacts</i>
-          <input id="storeContact" type="text" 
-          class="validate" required="" aria-required="true">
+          <input id="storeContact" type="text" class="validate">
           <label for="storeContact">Name</label>
         </div>
         <div class="input-field col s6">
           <i class="material-icons prefix">work</i>
-          <input id="contactPosition" type="tel" 
-          class="validate" required="" aria-required="true">
+          <input id="contactPosition" type="tel" class="validate">
           <label for="contactPosition">Position</label>
         </div>
       </div>
-      </form>
-      {{!-- <button class="btn waves-effect waves-light" id="submitBtnStore" 
-      type="submit" name="action">Submit</button> --}}
-    
-      <button class="btn waves-effect waves-light" type="submit" id="submitBtnStore" 
-      class="material-icons" name="action">Submit</button>
-
-      {{!-- <a class="waves-effect waves-light btn" id="submitBtnStore"><i 
-      class="material-icons right">save</i>Submit</a> --}}
+      <a class="waves-effect waves-light btn" id="submitBtnStore"><i class="material-icons right">save</i>Submit</a>
     </form>
   </div>
 <!--Service DIV-->

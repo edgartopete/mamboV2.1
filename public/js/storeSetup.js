@@ -75,7 +75,7 @@ var API = {
 // handleFormSubmitStore is called whenever we submit a new store
 var handleFormSubmitStore = function (event) {
   event.preventDefault();
-
+  
   uploadImg(logoName).then(function (response) {
     logoPath = response;
     uploadImg(bannerName).then(function (response) {
