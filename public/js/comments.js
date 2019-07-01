@@ -35,7 +35,7 @@ var handleFormSubmitComment = function (event) {
         ServiceId: $service.val()
       };
       console.log(comment);
-       API.saveComment(comment).then(function (data) {
+       API2.saveComment(comment).then(function (data) {
         //refreshComments();
        });
 };
